@@ -8,7 +8,7 @@ body {
 }
 #img{
   width: 500px;
-  height: 650px;
+  height: 100%;
 }
 .btn{
   background-color: rgb(219, 219, 239);
