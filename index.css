@@ -1,0 +1,17 @@
+body {
+  background-color:slategrey;
+  font-family: 'Dancing Script', cursive;
+}
+#container{
+  display: flex;
+  justify-content: center;
+}
+#img{
+  width: 500px;
+  height: 650px;
+}
+.btn{
+  background-color: rgb(219, 219, 239);
+  border: none;
+  font-size: 30px;
+}
