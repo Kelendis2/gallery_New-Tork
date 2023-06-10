@@ -16,12 +16,18 @@ const photos = [
 let i = 0;
 
 buttonNext.addEventListener('click', ()=>{
+ if (i> photos.length - 1){
+  i=0
+ }
   i++;
-  document.querySelector('#pictures').src = photos[i]
-
+  document.querySelector("#pictures").src = photos[i]
+  if (i < 0){
+    i = photos.length-1
+   }
 })
 buttonBack.addEventListener('click', ()=>{
   i--;
+
   document.querySelector("#pictures").src = photos[i]
 
 })
