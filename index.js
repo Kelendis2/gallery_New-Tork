@@ -10,24 +10,21 @@ const photos = [
   "7.jpg",
   "8.jpg",
   "9.jpg",
-  "10.jpg",
 ];
 
 let i = 0;
 
-buttonNext.addEventListener('click', ()=>{
- if (i> photos.length - 1){
-  i=0
- }
+buttonNext.addEventListener("click", () => {
   i++;
-  document.querySelector("#pictures").src = photos[i]
-  if (i < 0){
-    i = photos.length-1
-   }
-})
-buttonBack.addEventListener('click', ()=>{
+  if (i > photos.length - 1) {
+    i = 0;
+  }
+  document.querySelector(".pictures").src = photos[i];
+});
+buttonBack.addEventListener("click", () => {
   i--;
-
-  document.querySelector("#pictures").src = photos[i]
-
-})
+  if (i < 0) {
+    i = 8;
+  }
+  document.querySelector(".pictures").src = photos[i];
+});
