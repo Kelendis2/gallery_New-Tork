@@ -24,7 +24,7 @@ buttonNext.addEventListener("click", () => {
 buttonBack.addEventListener("click", () => {
   i--;
   if (i < 0) {
-    i = 8;
+    i = photos.length - 1;
   }
   document.querySelector(".pictures").src = photos[i];
 });
